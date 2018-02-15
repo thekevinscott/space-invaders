@@ -4,6 +4,8 @@ import {
 
 import Enemy from "./Enemy.js";
 
+const STARTING_SPEED = 1000;
+
 class EnemyRack {
   constructor(rows, cols, enemyWidth, enemyHeight, padding) {
     this.width = cols * (enemyWidth + padding);
@@ -21,9 +23,8 @@ class EnemyRack {
     this.position = 0;
     this.round = 0;
     this.step = enemyWidth;
-    this.moveTime = 250;
+    this.moveTime = STARTING_SPEED;
     this.direction = "right";
-    // console.log(enemyWidth, padding);
   }
 
   start() {
