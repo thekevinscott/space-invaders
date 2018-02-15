@@ -2,9 +2,9 @@ import {
   create,
 } from "./utils.js";
 
-import Enemy from "./Enemy";
-import Player from "./Player";
-import EnemyRack from "./EnemyRack";
+import Enemy from "./Enemy.js";
+import Player from "./Player.js";
+import EnemyRack from "./EnemyRack.js";
 
 const ENEMY_HEIGHT = 30;
 const ENEMY_WIDTH = 30;

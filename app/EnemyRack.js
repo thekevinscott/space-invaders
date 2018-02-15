@@ -2,7 +2,7 @@ import {
   create,
 } from "./utils.js";
 
-import Enemy from "./Enemy";
+import Enemy from "./Enemy.js";
 
 class EnemyRack {
   constructor(rows, cols, enemyWidth, enemyHeight, padding) {
