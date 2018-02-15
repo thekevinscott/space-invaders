@@ -8,7 +8,7 @@ import EnemyRack from "./EnemyRack.js";
 
 const ENEMY_HEIGHT = 30;
 const ENEMY_WIDTH = 30;
-const START_TIME = 10000;
+const START_TIME = 3000;
 const PADDING = ENEMY_WIDTH;
 const BOARD_SIZE = (ENEMY_WIDTH + PADDING) * (10 + 5);
 
