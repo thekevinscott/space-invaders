@@ -23,12 +23,12 @@ class Player {
   attachKeyboardListeners() {
     document.addEventListener("keydown", (e) => {
       // e.preventDefault();
-      if (e.key === "ArrowLeft") {
+      if (e.key === "ArrowLeft" || e.key === "h") {
         clearInterval(this.timer);
         this.timer = setInterval(() => {
           this.move(-1);
         }, 1);
-      } else if (e.key === "ArrowRight") {
+      } else if (e.key === "ArrowRight" || e.key === "l") {
         clearInterval(this.timer);
         this.timer = setInterval(() => {
           this.move(1);
