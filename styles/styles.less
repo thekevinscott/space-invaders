@@ -1,0 +1,19 @@
+@import "../node_modules/reset-css/reset.less";
+
+@import "./constants.less";
+@import "./board.less";
+@import "./game.less";
+@import "./enemy.less";
+@import "./player.less";
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  font-size: 150%;
+  color: @MATRIX_GREEN;
+  font-family: 'VT323', monospace;
+}

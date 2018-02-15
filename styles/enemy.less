@@ -1,0 +1,50 @@
+.rack {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+}
+
+.enemy {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  animation-name: move;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(1, start);
+
+  &.alerion {
+    background-image: url("../assets/enemies/enemy_alerion.png");
+  }
+
+  &.crawler {
+    background-image: url("../assets/enemies/enemy_crawler.png");
+  }
+
+  &.flamer {
+    background-image: url("../assets/enemies/enemy_flamer.png");
+  }
+
+  &.flyer {
+    background-image: url("../assets/enemies/enemy_flyer.png");
+  }
+
+  &.prog {
+    background-image: url("../assets/enemies/enemy_prog.png");
+  }
+
+  &.zarin {
+    background-image: url("../assets/enemies/enemy_zarin.png");
+  }
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0%;
+  }
+  50% {
+    background-position: 0 100%;
+  }
+}

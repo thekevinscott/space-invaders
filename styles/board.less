@@ -1,0 +1,23 @@
+.board {
+  flex: 1;
+  background: black;
+
+  .star {
+    position: absolute;
+    border-radius: 10px;
+    opacity: 0.5;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

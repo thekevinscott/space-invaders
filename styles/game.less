@@ -1,0 +1,22 @@
+.message {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.blink {
+  animation: 2s linear infinite blink_effect;
+}
+
+@keyframes blink_effect {
+  0% {
+    visibility: hidden;
+  }
+  20% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}

@@ -1,0 +1,18 @@
+@size: 30px;
+
+.player {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+
+  &:after {
+    display: block;
+    content: "";
+    margin-left: -@size/2;
+    background-image: url("../assets/spaceship.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    height: @size;
+    width: @size;
+  }
+}
